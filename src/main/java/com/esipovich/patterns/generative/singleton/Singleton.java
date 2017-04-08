@@ -11,10 +11,23 @@ public class Singleton {
     private Singleton() {
     }
 
-    public static Singleton getInstance() {
-        if(instance == null){
-            instance = new Singleton();
-        }
+    public static synchronized Singleton getInstance() {
+            if (instance == null) {
+                instance = new Singleton();
+            }
         return instance;
     }
 }
+
+/*  Плюсы
+    * позволяет ленивую инициализацию
+    * гарантирует единственный экземпляр
+*/
+
+/*  Минусы
+    * нарушает принцип единственной обязанности класса
+    * маскирует плохой дизайн
+    * проблемы мультипоточности
+    * проблемы юнит-тестирования
+*/
+
