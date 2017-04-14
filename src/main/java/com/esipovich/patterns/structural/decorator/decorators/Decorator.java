@@ -1,6 +1,8 @@
-package com.esipovich.patterns.structural.decorator;
+package com.esipovich.patterns.structural.decorator.decorators;
 
-public abstract class Decorator implements InterfaceComponent{
+import com.esipovich.patterns.structural.decorator.components.InterfaceComponent;
+
+public abstract class Decorator implements InterfaceComponent {
     protected InterfaceComponent interfaceComponent;
 
     public Decorator(InterfaceComponent interfaceComponent) {

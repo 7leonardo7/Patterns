@@ -1,4 +1,6 @@
-package com.esipovich.patterns.structural.decorator;
+package com.esipovich.patterns.structural.decorator.decorators;
+
+import com.esipovich.patterns.structural.decorator.components.InterfaceComponent;
 
 public class DecoratorHello extends Decorator{
     public DecoratorHello(InterfaceComponent interfaceComponent) {

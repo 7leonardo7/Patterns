@@ -1,4 +1,4 @@
-package com.esipovich.patterns.structural.decorator;
+package com.esipovich.patterns.structural.decorator.components;
 
 public class MainComponent implements InterfaceComponent{
     public void doOperation() {
