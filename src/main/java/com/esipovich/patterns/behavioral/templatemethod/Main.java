@@ -24,6 +24,7 @@ public class Main {
         }
 
         game.playOneGame(2);
+        System.out.println(game);
     }
 }
 
